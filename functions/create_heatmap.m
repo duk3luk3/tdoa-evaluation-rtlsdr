@@ -12,11 +12,11 @@ function [ heat_long, heat_lat, mse_doa ] = create_heatmap( doa_meters12, doa_me
 
     % defines the area, where the heatmap is displayed (around the geodetic
     % reference point)
-    lat_span = 0.05;
+    lat_span = 0.1;
     start_lat = geo_ref_lat - lat_span;
     stop_lat  = geo_ref_lat + lat_span;
    
-    long_span = 0.2;
+    long_span = 0.4;
     start_long = geo_ref_long - long_span;
     stop_long  = geo_ref_long + long_span;
     

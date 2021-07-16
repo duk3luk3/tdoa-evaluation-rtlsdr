@@ -34,7 +34,7 @@ function [ points_lat, points_long ] = gen_hyperbola( doa_meters, rx1_lat, rx1_l
     if abs(doa_meters/1000) <= dist_12
 
         %for r_1 = (exp(0:0.05:4)-1) / 5
-        for r_1 = 0:0.05:10
+        for r_1 = 0:0.05:100
             r_2 = r_1 - doa_meters/1000;
             %disp(['r_1 = ' num2str(r_1) ', r_2 = ' num2str(r_2)]);
 
